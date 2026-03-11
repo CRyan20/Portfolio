@@ -3,11 +3,17 @@
     <head>
         <meta charset="UTF=8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--SwiperJS Link-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
         <title>Ryan's Game Development Portfolio</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="container">
+        <div class="me">
             <h1>Ryan's Game Development Portfolio</h1>
             <div class="about">
                 <p>
@@ -20,22 +26,77 @@
             </div>
         </div>
 
-        <div class="container2">
-            <div class="card-wrapper">
-                <ul class="card-list">
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <img src="Assets/t1.jpg" alt="Card Image"
-                            class="card-image">
-                            <p class="badge">Unity</p>
-                            <h2 class="card-title">Skibidi rizz</h2>
-                            <button class="card-button">-></button>
+        <div class="game-scroll">
+            <div class="swiper">
+                <ul class="game-list swiper-wrapper">
+                    <li class="game-item swiper-slide">
+                        <a href="#" class="game-link">
+                            <img src="Assets/PlooperStarChef.png" alt="Game Image"
+                            class="game-image">
+                            <h2 class="game-description">
+                                Plooper Star Chef is a Overcooked inspired game with ragdoll physics
+                                where the player works as a chef with mini ploopers that help with
+                                cooking as well as cleaning.
+                            </h2>
+                            <button class="game-button">Click to See More</button>
+                        </a>
+                    </li>
+                    <li class="game-item swiper-slide">
+                        <a href="#" class="game-link">
+                            <img src="Assets/RhythmDiner.png" alt="Game Image"
+                            class="game-image">
+                            <h2 class="game-description">
+                                This is a rhythm based platformer game where the player has to time any action
+                                to the beat of the game.
+                            </h2>
+                            <button class="game-button">Click to See More</button>
+                        </a>
+                    </li>
+                    <li class="game-item swiper-slide">
+                        <a href="#" class="game-link">
+                            <img src="Assets/HookedOnHope.png" alt="Game Image"
+                            class="game-image">
+                            <h2 class="game-description">
+                                Hooked on Hope is a 2.5D platformer game with fishing mechanics where the player
+                                is a fisherman who just wants to fish but can never seem to get actual fish.
+                            </h2>
+                            <button class="game-button">Click to See More</button>
+                        </a>
+                    </li>
+                    <li class="game-item swiper-slide">
+                        <a href="#" class="game-link">
+                            <img src="Assets/NightfallManor.png" alt="Game Image"
+                            class="game-image">
+                            <h2 class="game-description">
+                                Night Fall Manor: Escape from the Shadowed Realm is a multiplayer co-op PVE experience
+                                where players have to work together to defeat enemies while completing tasks to escape.
+                            </h2>
+                            <button class="game-button">Click to See More</button>
+                        </a>
+                    </li>
+                    <li class="game-item swiper-slide">
+                        <a href="#" class="game-link">
+                            <img src="Assets/DefendersOfTheRealm.png" alt="Game Image"
+                            class="game-image">
+                            <h2 class="game-description">
+                                Defenders of the Realm is a grid based tower defense game where the player
+                                has to earn money by defeating enemies to upgrade existing cannons or 
+                                purchasing more to defend their home.
+                            </h2>
+                            <button class="game-button">Click to See More</button>
                         </a>
                     </li>
                 </ul>
+
+                <!--Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!--Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
-        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
