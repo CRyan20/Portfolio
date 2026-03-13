@@ -7,10 +7,21 @@ body
 
 .me
 {
+    text-align: center;
+    background-color: black;
+    align-self: auto;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.me .about
+{
     max-width: 1000px;
     margin: auto;
-    padding: 60px, 20vw;
 }
+
 
 .game-scroll
 {
@@ -19,14 +30,6 @@ body
     justify-content: center;
     min-height: 75vh;
 }
-
-/*.game-wrapper
-{
-    max-width: 1200px;
-    margin: 0 60px 35px;
-    padding: 20px 10px;
-    overflow: hidden;
-}*/
 
 .game-list .game-item
 {
@@ -46,6 +49,9 @@ body
     text-decoration: none;
     border: 2px solid transparent;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+    margin: 0 10px 20px;
+    box-sizing: border-box;
 }
 
 .game-list .game-item .game-link:hover
@@ -70,6 +76,7 @@ body
 {
     color: black;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .swiper-button-next, .swiper-button-prev
@@ -77,8 +84,59 @@ body
     color: white;
 }
 
+.game-header
+{
+    text-align: center;
+    background-color: black;
+    align-self: auto;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.game-header .home-button
+{
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.game-details
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.25rem;
+    color: black;
+}
+
+.game-details-plooperimage
+{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 @media (max-width: 768px) {
     .game-list .game-item .game-link {
+        max-width: 90vw;
+    }
+    .game-details{
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-list .game-item .game-link {
+        max-width: 90vw;
+    }
+    .game-details{
         max-width: 90vw;
     }
 }
