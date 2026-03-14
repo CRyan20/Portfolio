@@ -113,7 +113,17 @@ body
     color: black;
 }
 
-.game-details-plooperimage
+.game-details .game-text
+{
+    flex-direction: column;
+}
+
+.game-video
+{
+    margin-top: 20px;
+}
+
+.game-details-image
 {
     margin-top: 10px;
     width: 100%;
@@ -129,6 +139,7 @@ body
     }
     .game-details{
         max-width: 90vw;
+        flex-direction: column;
     }
 }
 
@@ -138,5 +149,6 @@ body
     }
     .game-details{
         max-width: 90vw;
+        flex-direction: column;
     }
 }
